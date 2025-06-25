@@ -1,33 +1,27 @@
 import React, { useRef } from 'react';
-import { ChevronLeft, ChevronRight, Waves, Dumbbell, Space as Spa, Wifi, Car, Coffee, UtensilsCrossed, Gamepad2 } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Droplets, Snowflake, Flame, Wifi, Bed, Coffee } from 'lucide-react';
 
 const Facilities = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const facilities = [
     {
-      icon: Waves,
-      name: 'Swimming Pool',
-      description: 'Olympic-sized pool with poolside service',
-      image: 'https://images.pexels.com/photos/261169/pexels-photo-261169.jpeg?auto=compress&cs=tinysrgb&w=400',
+      icon: Droplets,
+      name: 'Hot Water',
+      description: '24/7 hot water supply in all rooms',
+      image: 'https://images.pexels.com/photos/6969831/pexels-photo-6969831.jpeg?auto=compress&cs=tinysrgb&w=400',
     },
     {
-      icon: Spa,
-      name: 'Luxury Spa',
-      description: 'Full-service spa with massage and wellness treatments',
-      image: 'https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=400',
+      icon: Snowflake,
+      name: 'AC (Inverter)',
+      description: 'Air conditioning available in rooms 101 & 102',
+      image: 'https://images.pexels.com/photos/4050344/pexels-photo-4050344.jpeg?auto=compress&cs=tinysrgb&w=400',
     },
     {
-      icon: Dumbbell,
-      name: 'Fitness Center',
-      description: '24/7 modern gym with personal trainers',
-      image: 'https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=400',
-    },
-    {
-      icon: UtensilsCrossed,
-      name: 'Fine Dining',
-      description: 'Michelin-starred restaurants and bars',
-      image: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=400',
+      icon: Flame,
+      name: 'Heaters',
+      description: 'Room heaters for comfortable stay',
+      image: 'https://images.pexels.com/photos/6969826/pexels-photo-6969826.jpeg?auto=compress&cs=tinysrgb&w=400',
     },
     {
       icon: Wifi,
@@ -36,22 +30,16 @@ const Facilities = () => {
       image: 'https://images.pexels.com/photos/4050344/pexels-photo-4050344.jpeg?auto=compress&cs=tinysrgb&w=400',
     },
     {
-      icon: Car,
-      name: 'Valet Parking',
-      description: 'Complimentary valet parking service',
-      image: 'https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=400',
+      icon: Bed,
+      name: 'Extra Mattresses',
+      description: 'Additional bedding available on request',
+      image: 'https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=400',
     },
     {
       icon: Coffee,
-      name: 'Coffee Lounge',
-      description: 'Premium coffee and light refreshments',
+      name: 'Breakfast',
+      description: 'Complimentary breakfast service',
       image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400',
-    },
-    {
-      icon: Gamepad2,
-      name: 'Game Room',
-      description: 'Entertainment center with games and activities',
-      image: 'https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=400',
     },
   ];
 
@@ -70,13 +58,13 @@ const Facilities = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium mb-4">
-            Amenities
+            Services
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            World-Class Facilities
+            Our Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover our exceptional amenities designed to make your stay unforgettable.
+            Discover our essential services designed to make your stay comfortable and memorable.
           </p>
         </div>
 

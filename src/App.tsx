@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Accommodation from './components/Accommodation';
@@ -7,8 +8,9 @@ import Testimonials from './components/Testimonials';
 import Attractions from './components/Attractions';
 import Map from './components/Map';
 import Footer from './components/Footer';
+import RoomDetails from './components/RoomDetails';
 
-function App() {
+function HomePage() {
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -20,6 +22,17 @@ function App() {
       <Map />
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/room-details" element={<RoomDetails />} />
+      </Routes>
+    </Router>
   );
 }
 
