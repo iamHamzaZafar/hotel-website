@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowLeft, Users, Bed, Bath, Wifi, Snowflake, Droplets, Flame, Coffee, Phone, Mail, MapPin, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Users, Bed, Bath, Wifi, Snowflake, Droplets, Flame, Coffee, Phone, Mail, MapPin, ChevronLeft, ChevronRight } from 'lucide-react' ;
 
 interface Room {
   id: string;
