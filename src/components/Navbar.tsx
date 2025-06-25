@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, MapPin, Phone, Mail } from 'lucide-react';
+import { Menu, X, MapPin, Phone } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = () => {
     { name: 'Contact', href: '#contact' },
   ];
 
-  const scrollToSection = (href: string) => {
+   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -33,18 +33,11 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
-                <MapPin className="w-5 h-5 text-white" />
-              </div>
-              <span className={`text-xl font-bold ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
-                Paradise Hotel
-              </span>
-            </div>
+              <img src="/src/public/logo.png" alt="Hotel Logo" className="h-44 w-40" />
           </div>
 
           {/* Desktop Navigation */}
@@ -68,7 +61,7 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <div className={`flex items-center space-x-1 text-sm ${isScrolled ? 'text-gray-600' : 'text-white/80'}`}>
               <Phone className="w-4 h-4" />
-              <span>+1 (555) 123-4567</span>
+              <span>+92 (300) 494-0451</span>
             </div>
           </div>
 

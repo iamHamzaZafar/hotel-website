@@ -1,19 +1,30 @@
-import React from 'react';
-import { Facebook, Instagram, Twitter, Youtube, ArrowDown } from 'lucide-react';
+import React, { useState } from "react";
+import { Facebook, Instagram, Twitter, Youtube, ArrowDown } from "lucide-react";
 
 const Hero = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [isOpen, setIsOpen] = useState(false);
+
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
+    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Youtube, href: "#", label: "YouTube" },
   ];
 
   const scrollToNext = () => {
-    const accommodationSection = document.querySelector('#accommodation');
+    const accommodationSection = document.querySelector("#accommodation");
     if (accommodationSection) {
-      accommodationSection.scrollIntoView({ behavior: 'smooth' });
+      accommodationSection.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
   };
 
   return (
@@ -33,10 +44,11 @@ const Hero = () => {
             type="video/mp4"
           />
           {/* Fallback image if video doesn't load */}
-          <div 
+          <div
             className="w-full h-full bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)'
+              backgroundImage:
+                "url(https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)",
             }}
           />
         </video>
@@ -69,21 +81,25 @@ const Hero = () => {
               Welcome to Paradise
             </span>
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up animation-delay-200">
             Paradise
             <span className="block text-yellow-400">Hotel</span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto animate-fade-in-up animation-delay-400">
-            Experience luxury and comfort in the heart of paradise. Your unforgettable journey begins here.
+            Experience luxury and comfort in the heart of paradise. Your
+            unforgettable journey begins here.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
-            <button className="px-8 py-4 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+            <button
+              onClick={() => scrollToSection("#contact")}
+              className="px-8 py-4 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 shadow-lg"
+            >
               Book Now
             </button>
-            <button className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/30 hover:bg-white/30 transition-all duration-300">
+            <button onClick={()=>scrollToSection("#accommodation")} className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/30 hover:bg-white/30 transition-all duration-300">
               Explore Rooms
             </button>
           </div>
