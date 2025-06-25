@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Youtube, Send } from 'lucide-react';
+import React from 'react';
+import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
+  // const [email, setEmail] = useState('');
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle newsletter signup
-    console.log('Newsletter signup:', email);
-    setEmail('');
-    alert('Thank you for subscribing to our newsletter!');
-  };
+  // const handleNewsletterSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // Handle newsletter signup
+  //   console.log('Newsletter signup:', email);
+  //   setEmail('');
+  //   alert('Thank you for subscribing to our newsletter!');
+  // };
 
   const quickLinks = [
     'About Us', 'Rooms & Suites', 'Dining', 'Spa & Wellness', 'Activities', 'Events'
@@ -34,10 +34,12 @@ const Footer = () => {
           {/* Hotel Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
-                <MapPin className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-2xl font-bold">Paradise Hotel</span>
+              {/* <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center"> */}
+                {/* <MapPin className="w-6 h-6 text-white" /> */}
+              <img src="/src/public/logo.png" alt="Hotel Logo" className="h-44 w-40" />
+
+              {/* </div> */}
+              <span className="text-2xl font-bold">Rgonsa Hotel</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Experience luxury and comfort in paradise. Your unforgettable journey begins at Paradise Hotel, where every detail is crafted for your perfect getaway.
@@ -45,11 +47,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300">123 Paradise Boulevard, Tropical Island</span>
+                <span className="text-gray-300">123 Rgonsa Boulevard, Tropical Island</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+92 (300) 494-0451</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-yellow-400" />
@@ -98,7 +100,7 @@ const Footer = () => {
             <p className="text-gray-300 mb-6">
               Subscribe to our newsletter for exclusive offers and updates.
             </p>
-            <form onSubmit={handleNewsletterSubmit} className="space-y-4">
+            {/* <form onSubmit={handleNewsletterSubmit} className="space-y-4">
               <div className="relative">
                 <input
                   type="email"
@@ -115,7 +117,7 @@ const Footer = () => {
                   <Send className="w-4 h-4 text-white" />
                 </button>
               </div>
-            </form>
+            </form> */}
 
             {/* Social Media */}
             <div className="mt-8">
@@ -140,7 +142,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2024 Paradise Hotel. All rights reserved.
+              © 2024 Rgonsa Hotel. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">

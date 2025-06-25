@@ -256,11 +256,11 @@ const RoomDetails = () => {
                   <div className="flex items-center justify-center space-x-4 text-sm">
                     <div className="flex items-center space-x-1">
                       <Phone className="w-4 h-4" />
-                      <span>+1 (555) 123-4567</span>
+                      <span>+92 (300) 494-0451</span>
                     </div>
                     <div className="flex items-center space-x-1">
                       <Mail className="w-4 h-4" />
-                      <span>info@paradisehotel.com</span>
+                      <span>info@rgonsahotel.com</span>
                     </div>
                   </div>
                 </div>

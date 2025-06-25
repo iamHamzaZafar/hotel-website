@@ -10,7 +10,7 @@ const Map = () => {
             Location
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Find Paradise Hotel
+            Find Rgonsa Hotel
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Located in the heart of paradise, our hotel offers easy access to all major attractions and stunning natural beauty.
@@ -30,7 +30,7 @@ const Map = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Address</h4>
-                    <p className="text-gray-600">123 Paradise Boulevard<br />Tropical Island, TI 12345</p>
+                    <p className="text-gray-600">123 Rgonsa Boulevard<br />Tropical Island, TI 12345</p>
                   </div>
                 </div>
 
@@ -40,7 +40,7 @@ const Map = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">+92 (300) 494-0451</p>
                   </div>
                 </div>
 
@@ -50,7 +50,7 @@ const Map = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">info@paradisehotel.com</p>
+                    <p className="text-gray-600">info@rgonsahotel.com</p>
                   </div>
                 </div>
 
@@ -68,7 +68,7 @@ const Map = () => {
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <h4 className="font-semibold text-gray-900 mb-4">Getting Here</h4>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• 15 minutes from Paradise International Airport</li>
+                  {/* <li>• 15 minutes from Paradise International Airport</li> */}
                   <li>• Complimentary shuttle service available</li>
                   <li>• Taxi and ride-sharing services</li>
                   <li>• Car rental available on-site</li>
@@ -96,8 +96,8 @@ const Map = () => {
               <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-400 to-blue-600">
                 <div className="text-center text-white">
                   <MapPin className="w-16 h-16 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">Paradise Hotel</h3>
-                  <p className="text-blue-100">123 Paradise Boulevard, Tropical Island</p>
+                  <h3 className="text-2xl font-bold mb-2">Rgonsa Hotel</h3>
+                  <p className="text-blue-100">123 Rgonsa Boulevard, Tropical Island</p>
                   <p className="text-blue-100 mt-2">Interactive map loading...</p>
                 </div>
               </div>

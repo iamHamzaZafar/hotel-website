@@ -78,12 +78,12 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto px-4">
           <div className="mb-6 animate-fade-in-up">
             <span className="inline-block px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full text-yellow-300 text-sm font-medium mb-4">
-              Welcome to Paradise
+              Welcome to Rgonsa
             </span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up animation-delay-200">
-            Paradise
+            Rgonsa
             <span className="block text-yellow-400">Hotel</span>
           </h1>
 
