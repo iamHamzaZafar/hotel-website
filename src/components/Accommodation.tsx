@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Users, Bed, Bath, Wifi, Snowflake, Droplets, ChevronLeft, ChevronRight } from 'lucide-react';
+import {  Bed, Bath, Wifi, Snowflake, Droplets, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Accommodation = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState<{[key: string]: number}>({});
@@ -16,7 +16,7 @@ const Accommodation = () => {
         'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       description: 'Luxurious executive room with modern amenities and air conditioning.',
-      price: 3500,
+      price: 22000,
       bedConfiguration: '1 Double Bed',
       features: ['AC (Inverter)', 'Hot Water', 'Free Wi-Fi', 'Heaters'],
       amenities: [Snowflake, Droplets, Wifi, Bed],
@@ -34,7 +34,7 @@ const Accommodation = () => {
         'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       description: 'Spacious executive room with double and single bed, featuring air conditioning.',
-      price: 4000,
+      price: 18000,
       bedConfiguration: '1 Double Bed, 1 Single Bed',
       features: ['AC (Inverter)', 'Hot Water', 'Free Wi-Fi', 'Heaters'],
       amenities: [Snowflake, Droplets, Wifi, Bed],
@@ -52,7 +52,7 @@ const Accommodation = () => {
         'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       description: 'Comfortable deluxe room with essential amenities for a pleasant stay.',
-      price: 2500,
+      price: 18000,
       bedConfiguration: '1 Double Bed',
       features: ['Hot Water', 'Free Wi-Fi', 'Heaters', 'Extra Mattresses'],
       amenities: [Droplets, Wifi, Bed, Bath],
@@ -70,7 +70,7 @@ const Accommodation = () => {
         'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       description: 'Enhanced deluxe room with double and single bed configuration.',
-      price: 3000,
+      price: 15000,
       bedConfiguration: '1 Double Bed, 1 Single Bed',
       features: ['Hot Water', 'Free Wi-Fi', 'Heaters', 'Extra Mattresses'],
       amenities: [Droplets, Wifi, Bed, Bath],
@@ -88,7 +88,7 @@ const Accommodation = () => {
         'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       description: 'Cozy deluxe room with double bed and all essential amenities.',
-      price: 2500,
+      price: 12000,
       bedConfiguration: '1 Double Bed',
       features: ['Hot Water', 'Free Wi-Fi', 'Heaters', 'Extra Mattresses'],
       amenities: [Droplets, Wifi, Bed, Bath],
