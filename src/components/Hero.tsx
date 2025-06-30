@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Facebook, Instagram, Twitter, Youtube, ArrowDown } from "lucide-react";
 
 const Hero = () => {
@@ -37,10 +37,10 @@ const Hero = () => {
           loop
           playsInline
           className="w-full h-full object-cover"
-          poster="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+          // poster="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
         >
           <source
-            src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            src="/reel.mp4"
             type="video/mp4"
           />
           {/* Fallback image if video doesn't load */}

@@ -1,5 +1,4 @@
-import React from 'react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Map = () => {
   return (
@@ -13,7 +12,8 @@ const Map = () => {
             Find Rgonsa Hotel
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Located in the heart of paradise, our hotel offers easy access to all major attractions and stunning natural beauty.
+            Located in the heart of paradise, our hotel offers easy access to
+            all major attractions and stunning natural beauty.
           </p>
         </div>
 
@@ -21,8 +21,10 @@ const Map = () => {
           {/* Contact Information */}
           <div className="lg:col-span-1">
             <div className="bg-gray-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
-              
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                Contact Information
+              </h3>
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-yellow-500 p-3 rounded-full">
@@ -30,7 +32,9 @@ const Map = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Address</h4>
-                    <p className="text-gray-600">123 Rgonsa Boulevard<br />Tropical Island, TI 12345</p>
+                    <p className="text-gray-600">
+                      Skardu - Lower Kachura Hotel
+                    </p>
                   </div>
                 </div>
 
@@ -59,14 +63,18 @@ const Map = () => {
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Reception Hours</h4>
+                    <h4 className="font-semibold text-gray-900">
+                      Reception Hours
+                    </h4>
                     <p className="text-gray-600">24/7 Front Desk Service</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8 pt-8 border-t border-gray-200">
-                <h4 className="font-semibold text-gray-900 mb-4">Getting Here</h4>
+                <h4 className="font-semibold text-gray-900 mb-4">
+                  Getting Here
+                </h4>
                 <ul className="space-y-2 text-sm text-gray-600">
                   {/* <li>• 15 minutes from Paradise International Airport</li> */}
                   <li>• Complimentary shuttle service available</li>
@@ -81,26 +89,14 @@ const Map = () => {
           <div className="lg:col-span-2">
             <div className="bg-gray-100 rounded-2xl overflow-hidden h-96 lg:h-full min-h-[400px] relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.1234567890123!2d-156.68123456789012!3d20.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDA3JzI0LjQiTiAxNTbCsDQwJzUyLjQiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.2120396096007!2d75.45114157638454!3d35.42477704401813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e443bd233b2659%3A0xdefa94b17b7527ea!2sRGONSA!5e0!3m2!1sen!2s!4v1751305110993!5m2!1sen!2s"
                 width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
+                height="450"
+                // style="border:0;"
+                // allowfullscreen=""
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="absolute inset-0"
-                title="Paradise Hotel Location"
-              />
-              
-              {/* Fallback content */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-400 to-blue-600">
-                <div className="text-center text-white">
-                  <MapPin className="w-16 h-16 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">Rgonsa Hotel</h3>
-                  <p className="text-blue-100">123 Rgonsa Boulevard, Tropical Island</p>
-                  <p className="text-blue-100 mt-2">Interactive map loading...</p>
-                </div>
-              </div>
+                // referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>

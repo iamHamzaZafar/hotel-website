@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import{ useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 
 const Navbar = () => {
@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-              <img src="/src/public/logo.png" alt="Hotel Logo" className="h-44 w-40" />
+              <img src="/logo.png" alt="Hotel Logo" className="h-44 w-40" />
           </div>
 
           {/* Desktop Navigation */}

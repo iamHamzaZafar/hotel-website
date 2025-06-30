@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 
 const Footer = () => {
@@ -36,7 +35,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-6">
               {/* <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center"> */}
                 {/* <MapPin className="w-6 h-6 text-white" /> */}
-              <img src="/src/public/logo.png" alt="Hotel Logo" className="h-44 w-40" />
+              <img src="/logo.png" alt="Hotel Logo" className="h-44 w-40" />
 
               {/* </div> */}
               <span className="text-2xl font-bold">Rgonsa Hotel</span>
@@ -47,7 +46,8 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300">123 Rgonsa Boulevard, Tropical Island</span>
+                    Skardu - Lower Kachura Hotel
+                <span className="text-gray-300"></span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-yellow-400" />
