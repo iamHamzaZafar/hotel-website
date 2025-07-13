@@ -10,7 +10,7 @@ const Accommodation = () => {
       name: 'Executive Room',
       roomNumber: '101',
       images: [
-        '/room101.jpg',
+        '/room101.jpeg',
         // 'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800',
         // 'https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=800',
         // 'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800'
@@ -25,10 +25,10 @@ const Accommodation = () => {
     },
     {
       id: '102',
-      name: 'Executive Room',
+      name: 'Deluxe Room',
       roomNumber: '102',
       images: [
-        '/room102.jpg',
+        '/room102.jpeg',
         // 'https://images.pexels.com/photos/1743230/pexels-photo-1743230.jpeg?auto=compress&cs=tinysrgb&w=800',
         // 'https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=800',
         // 'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800'
@@ -43,10 +43,10 @@ const Accommodation = () => {
     },
     {
       id: '103',
-      name: 'Deluxe Room',
+      name: 'Classic Room',
       roomNumber: '103',
       images: [
-        'room103.jpg',
+        'classic.jpeg',
         // 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
         // 'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800',
         // 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800'
@@ -61,10 +61,10 @@ const Accommodation = () => {
     },
     {
       id: '104',
-      name: 'Deluxe Plus Room',
+      name: 'Classic Room',
       roomNumber: '104',
       images: [
-        'room104.jpg',
+        'room104.jpeg',
         // 'https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=800',
         // 'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800',
         // 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800'
@@ -79,16 +79,16 @@ const Accommodation = () => {
     },
     {
       id: '105',
-      name: 'Deluxe Room',
+      name: 'Classic Room',
       roomNumber: '105',
       images: [
-        'room105.jpg',
+        'room105.jpeg',
         // 'https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=800',
         // 'https://images.pexels.com/photos/1743230/pexels-photo-1743230.jpeg?auto=compress&cs=tinysrgb&w=800',
         // 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       description: 'Cozy deluxe room with double bed and all essential amenities.',
-      price: 12000,
+      price: 12500,
       bedConfiguration: '1 Double Bed',
       features: ['Hot Water', 'Free Wi-Fi', 'Heaters', 'Extra Mattresses'],
       amenities: [Droplets, Wifi, Bed, Bath],
@@ -191,7 +191,7 @@ const Accommodation = () => {
                     Room {room.roomNumber}
                   </div>
                   <div className="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    ₹{room.price}/night
+                    {room.price}/night
                   </div>
                   {room.hasAC && (
                     <div className="absolute top-16 right-4 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold flex items-center">
