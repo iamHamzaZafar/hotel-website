@@ -4,48 +4,49 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const testimonials = [
-    {
-      id: 1,
-      name: 'Sarah Johnson',
-      location: 'New York, USA',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200',
-      rating: 5,
-      text: 'An absolutely magical experience! The staff was incredibly attentive, the rooms were luxurious, and the ocean view was breathtaking. This is definitely a place I would return to.',
-    },
-    {
-      id: 2,
-      name: 'Michael Chen',
-      location: 'Singapore',
-      image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=200',
-      rating: 5,
-      text: 'The Paradise Hotel exceeded all my expectations. From the moment I arrived, I felt like royalty. The spa treatments were world-class and the dining experience was unforgettable.',
-    },
-    {
-      id: 3,
-      name: 'Emma Williams',
-      location: 'London, UK',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=200',
-      rating: 5,
-      text: 'Perfect honeymoon destination! The private beach access, romantic dinners, and impeccable service made our stay truly special. We are already planning our anniversary trip back.',
-    },
-    {
-      id: 4,
-      name: 'David Rodriguez',
-      location: 'Madrid, Spain',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200',
-      rating: 5,
-      text: 'Outstanding luxury hotel with attention to every detail. The facilities are top-notch, the location is perfect, and the staff goes above and beyond to ensure a memorable stay.',
-    },
-    {
-      id: 5,
-      name: 'Lisa Thompson',
-      location: 'Sydney, Australia',
-      image: 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=200',
-      rating: 5,
-      text: 'A five-star experience from start to finish. The sunset views from our suite were incredible, and the concierge helped us discover amazing local attractions. Highly recommended!',
-    },
-  ];
+const testimonials = [
+  {
+    id: 1,
+    name: 'Ayesha Khan',
+    location: 'Lahore, Pakistan',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJQDM2QI8oYQB0dBArDmsVEcT8BicXlSaHTA&s',
+    rating: 5,
+    text: 'Truly a mesmerizing experience! The views were surreal, the hospitality unmatched, and the food reminded me of home with a touch of luxury. Can’t wait to visit again.',
+  },
+  {
+    id: 2,
+    name: 'Bilal Ahmed',
+    location: 'Karachi, Pakistan',
+    image: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=200',
+    rating: 5,
+    text: 'From the scenic landscape to the comfortable rooms, everything was perfect. The staff was extremely courteous and made our family trip unforgettable.',
+  },
+  {
+    id: 3,
+    name: 'Zainab Fatima',
+    location: 'Islamabad, Pakistan',
+    image: 'https://i.pinimg.com/736x/27/d4/c8/27d4c833b80d767b5cdc7ab22b52c8bd.jpg',
+    rating: 5,
+    text: 'A perfect getaway spot! The calmness of the lake, the luxury of the resort, and the warmth of the staff made it feel like a dream. Highly recommended for couples and families.',
+  },
+  {
+    id: 4,
+    name: 'Hassan Raza',
+    location: 'Rawalpindi, Pakistan',
+    image: 'https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&w=200',
+    rating: 5,
+    text: 'What an exceptional stay! The natural beauty surrounding the hotel is unmatched. The management has truly done a great job maintaining such high standards.',
+  },
+  {
+    id: 5,
+    name: 'Maria Yousuf',
+    location: 'Faisalabad, Pakistan',
+    image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=200',
+    rating: 5,
+    text: 'Everything was picture-perfect — from the room service to the guided tours. It was a luxurious retreat that gave us beautiful memories to cherish.',
+  },
+];
+
 
   useEffect(() => {
     const interval = setInterval(() => {

@@ -7,7 +7,7 @@ const Accommodation = () => {
   const rooms = [
     {
       id: '101',
-      name: 'Executive Room',
+      name: 'Deluxe Room',
       roomNumber: '101',
       images: [
         '/room101.jpeg',

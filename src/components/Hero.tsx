@@ -1,15 +1,16 @@
 import  { useState } from "react";
-import { Facebook, Instagram, Twitter, Youtube, ArrowDown } from "lucide-react";
+import { Facebook, Instagram, ArrowDown , Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isOpen, setIsOpen] = useState(false);
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Youtube, href: "#", label: "YouTube" },
+    { icon: Facebook, href: "https://www.facebook.com/rgonsahotel", label: "Facebook" },
+    { icon: Instagram, href: "https://www.instagram.com/rgonsahotel/", label: "Instagram" },
+    { icon: Phone, href: "https://wa.me/message/ZZGVU34FYQOZA1", label: "Whatsapp" },
+    // { icon: Youtube, href: "#", label: "YouTube" },
   ];
 
   const scrollToNext = () => {
@@ -78,27 +79,30 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto px-4">
           <div className="mb-6 animate-fade-in-up">
             <span className="inline-block px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full text-yellow-300 text-sm font-medium mb-4">
-              Welcome to Rgonsa
+              Welcome to Rgonsa Hotel Skardu
             </span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up animation-delay-200">
-            Rgonsa
-            <span className="block text-yellow-400">Hotel</span>
+            Rgonsa Hotel 
+            <span className="block text-yellow-400">Skardu</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto animate-fade-in-up animation-delay-400">
-            Experience luxury and comfort in the heart of paradise. Your
-            unforgettable journey begins here.
+          The view of Shangrila, the calm of Lower Kachura Lake – a silence that touches the soul. RGONSA Hotel – trusted by many seeking peace and comfort.
+
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
+            <Link to={'https://wa.me/message/ZZGVU34FYQOZA1'} >
             <button
-              onClick={() => scrollToSection("#contact")}
+              // onClick={() => scrollToSection("#contact")}
+              
               className="px-8 py-4 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 shadow-lg"
             >
               Book Now
             </button>
+            </Link>
             <button onClick={()=>scrollToSection("#accommodation")} className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/30 hover:bg-white/30 transition-all duration-300">
               Explore Rooms
             </button>

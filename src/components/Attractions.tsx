@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { ChevronLeft, ChevronRight, MapPin, Clock, Camera } from 'lucide-react';
+import { ChevronLeft, ChevronRight, MapPin, Clock } from 'lucide-react';
 
 const Attractions = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -7,57 +7,75 @@ const Attractions = () => {
   const attractions = [
     {
       id: 1,
-      name: 'Paradise Beach',
-      image: 'https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Crystal clear waters and white sandy beaches perfect for swimming and sunbathing.',
-      distance: '2 minutes walk',
-      duration: '2-3 hours',
-      highlights: ['Snorkeling', 'Beach Volleyball', 'Sunset Views'],
+      name: 'Lower Kachura Lake',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLStonjJ4n-B8a42WuA5ZlY9fcdl6PtUzwoA&s',
+      description: 'Scenic lake right by the stay — perfect for boating, dining, and relaxing.',
+      distance: 'Right by stay',
+      duration: '1-2 hours',
+      highlights: ['Boating', 'Dining', 'Photo Ops', 'Relaxing'],
     },
     {
       id: 2,
-      name: 'Coral Reef Diving',
-      image: 'https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Explore vibrant coral reefs and tropical marine life in pristine waters.',
-      distance: '10 minutes boat ride',
-      duration: 'Half day',
-      highlights: ['Scuba Diving', 'Snorkeling', 'Marine Photography'],
+      name: 'Upper Kachura Lake',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHNOxSNJK2gDQZHYJjY9dJyTlSqbKmoI6uAg&s',
+      description: 'Peaceful lake with hiking trails and trout fishing opportunities.',
+      distance: '~2 km / 15–30 min',
+      duration: '2-3 hours',
+      highlights: ['Hiking', 'Trout Fishing', 'Serene Views'],
     },
     {
       id: 3,
-      name: 'Tropical Rainforest',
-      image: 'https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Lush rainforest trails with exotic wildlife and breathtaking waterfalls.',
-      distance: '30 minutes drive',
-      duration: 'Full day',
-      highlights: ['Hiking', 'Wildlife Spotting', 'Waterfall Swimming'],
+      name: 'Soq Valley',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfmyznTV1MognreLWUmbLhsv-C8y3UvL0PYg&s',
+      description: 'Off-road valley ideal for trekking, camping, and photography.',
+      distance: 'Off road nearby',
+      duration: 'Half day',
+      highlights: ['Trekking', 'Camping', 'Photography'],
     },
     {
       id: 4,
-      name: 'Historic Old Town',
-      image: 'https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Charming colonial architecture and local markets with traditional crafts.',
-      distance: '15 minutes drive',
-      duration: '3-4 hours',
-      highlights: ['Architecture', 'Shopping', 'Local Cuisine'],
+      name: 'Satpara Lake',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRosbJ88VXkKW7xjuFUQ3ViR9EXHy_aKeCQvg&s',
+      description: 'A large lake surrounded by mountains, perfect for scenic boating and leisure.',
+      distance: '~6 mi by road',
+      duration: '1-2 hours',
+      highlights: ['Boating', 'Scenic Leisure'],
     },
     {
       id: 5,
-      name: 'Sunset Cruise',
-      image: 'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Romantic sunset sailing with champagne and panoramic ocean views.',
-      distance: '5 minutes walk to marina',
-      duration: '2 hours',
-      highlights: ['Sailing', 'Sunset Views', 'Dolphin Watching'],
+      name: 'Deosai National Park',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOXa880po1MfDrxTdu4lBK9rGfHHEwrkByIw&s',
+      description: 'High-altitude plains with wildlife, wildflowers, and panoramic views.',
+      distance: '~2 hrs by road',
+      duration: 'Full day',
+      highlights: ['Wildlife', 'Plains', 'High-Altitude Views'],
     },
     {
       id: 6,
-      name: 'Mountain Observatory',
-      image: 'https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Panoramic island views and stargazing experience at the highest peak.',
-      distance: '45 minutes drive',
-      duration: 'Half day',
-      highlights: ['Panoramic Views', 'Stargazing', 'Photography'],
+      name: 'Skardu / Shigar Forts',
+      image: 'https://res.cloudinary.com/www-travelpakistani-com/image/upload/v1660911387/Shigar_Fort_-_Skardu.jpg',
+      description: 'Explore Baltistan’s cultural legacy through preserved forts and architecture.',
+      distance: '~20–30 km',
+      duration: '2-3 hours',
+      highlights: ['Cultural Heritage', 'Architecture'],
+    },
+    {
+      id: 7,
+      name: 'Manthal Buddha Rock',
+      image: 'https://res.cloudinary.com/www-travelpakistani-com/image/upload/w_900,h_360,c_fill,g_auto,q_30,dpr_1.0,f_auto/blogs/hn7ppd2vtamauhc6u40a.webp',
+      description: 'Ancient Buddhist carving from the 8th century etched into rock.',
+      distance: '~3 km from Satpara road',
+      duration: '1 hour',
+      highlights: ['Historic Relic'],
+    },
+    {
+      id: 8,
+      name: 'Manthokha Waterfall',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGxnz3-FlXtmZBThhhjbh0XLWWY-jRyI5zNw&s',
+      description: 'Majestic waterfall perfect for a day trip, with nearby trout farms.',
+      distance: '~80 km (day trip)',
+      duration: 'Full day',
+      highlights: ['Waterfalls', 'Nature', 'Trout Farming'],
     },
   ];
 
@@ -150,10 +168,10 @@ const Attractions = () => {
                     </div>
                   </div>
 
-                  <button className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors">
+                  {/* <button className="w-full flex items-center justify-center space-x-2 px-4 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors">
                     <Camera className="w-4 h-4" />
                     <span>Learn More</span>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             ))}

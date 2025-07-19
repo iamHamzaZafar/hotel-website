@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   // const [email, setEmail] = useState('');
@@ -20,10 +20,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
+    { icon: Facebook, href: 'https://www.facebook.com/rgonsahotel', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/rgonsahotel/', label: 'Instagram' },
+    { icon: Phone, href: 'https://wa.me/message/ZZGVU34FYQOZA1', label: 'Whatsapp' },
   ];
 
   return (
